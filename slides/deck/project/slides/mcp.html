@@ -1,0 +1,32 @@
+<section id="mcp" style="background:#F1ECE4;color:#1C1F26;font-family:'Noto Sans JP', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:700;color:#B4560A;letter-spacing:2px">リモート MCP の仕組み</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.25">AI が、ネットの向こうのツールを呼び出す</h2>
+<div style="display:flex;gap:48px;flex:1;align-items:center">
+<div style="width:820px;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;align-items:center;gap:20px">
+<div style="width:220px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#FFFDF9;border:2px solid #D8D0C2;border-radius:16px;padding:28px">
+<x-icon name="Chat" style="width:64px;height:64px;color:#2B59C3"></x-icon>
+<p style="font-size:26px;font-weight:700;text-align:center">AI クライアント</p>
+</div>
+<x-shape kind="arrow-right" style="width:80px;height:40px;background:#9C968B"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;background:#F38020;border-radius:16px;padding:28px">
+<x-icon name="Tool" style="width:64px;height:64px;color:#1C1F26"></x-icon>
+<p style="font-size:26px;font-weight:700;text-align:center;color:#1C1F26">MCP サーバー<br>（Workers で動く）</p>
+</div>
+<x-shape kind="arrow-right" style="width:80px;height:40px;background:#9C968B"></x-shape>
+<div style="width:180px;display:flex;flex-direction:column;align-items:center;gap:12px;background:#FFFDF9;border:2px solid #D8D0C2;border-radius:16px;padding:28px">
+<x-icon name="Database" style="width:64px;height:64px;color:#2B59C3"></x-icon>
+<p style="font-size:26px;font-weight:700;text-align:center">処理・データ</p>
+</div>
+</div>
+<ol style="font-size:28px;color:#1C1F26;line-height:1.7">
+<li>AI が「どんなツールがある？」と聞く（tools/list）</li>
+<li>質問に合うツールを選び、引数を付けて呼ぶ（tools/call）</li>
+<li>結果を受け取り、それを使って答えを書く</li>
+</ol>
+</div>
+<img src="/_blob/3946899604f073d21e58ca01830afff7" alt="AI Playground で、自作 MCP サーバーの roll_dice ツールが呼ばれ、サイコロの結果を返している画面" style="flex:1;height:620px;object-fit:contain;border-radius:16px;border:1px solid #D8D0C2;background:#FFFFFF">
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7080">右：ハンズオンで作る MCP サーバーのツールを、Cloudflare の AI Playground から呼んだ画面</p>
+<aside>MCP の流れを確認します。AI クライアントが MCP サーバーに、どんなツールがあるかを聞きます。質問に合うツールを選んで、引数を付けて呼び出します。返ってきた結果を使って、AI が答えを書きます。リモート MCP では、この MCP サーバーがインターネット上にあります。右の画面は、ハンズオンで作るサイコロのツールを AI が呼び出したところです。AI は乱数を正しく作れませんが、ツールを使えば本物のサイコロの結果を返せます。</aside>
+</section>

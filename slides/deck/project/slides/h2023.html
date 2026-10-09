@@ -1,0 +1,21 @@
+<section id="h2023" style="background:#FAF7F2;color:#1C1F26;font-family:'Noto Sans JP', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:700;color:#B4560A;letter-spacing:2px">歴史 6　2023</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.25">Workers AI：世界中のデータセンターに GPU を置いた</h2>
+<div style="display:flex;gap:40px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFDF9;border:1px solid #E4DDD1;border-radius:20px;padding:48px">
+<h3 style="font-size:36px;font-weight:700;color:#2B59C3">何をしたか（2023年9月に同時発表）</h3>
+<ul style="font-size:30px;color:#1C1F26;line-height:1.7">
+<li><b>Workers AI</b>：オープンなモデルを、Workers から 1 行で呼べる</li>
+<li><b>Vectorize</b>：RAG に使うベクトルデータベース</li>
+<li><b>AI Gateway</b>：OpenAI など外部 AI への通信をまとめて記録・キャッシュ・制限</li>
+</ul>
+</div>
+<div style="width:640px;display:flex;flex-direction:column;gap:20px;background:#1C1F26;border-radius:20px;padding:48px">
+<h3 style="font-size:36px;font-weight:700;color:#F38020">なぜ</h3>
+<p style="font-size:32px;color:#F5F1EA;line-height:1.7">AI を使うには <b>GPU の確保とインフラの専門知識</b>が必要で、多くの開発者には壁だった</p>
+<p style="font-size:28px;color:#C9C3B8;line-height:1.6">すでに Workers という「コードを動かす場所」があったので、そこに GPU を足せば、開発者は追加の準備なしに AI を使える</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7080">出典：blog.cloudflare.com「Workers AI: serverless GPU-powered inference on Cloudflare's global network」（2023年9月27日）</p>
+<aside>2023年、ChatGPT のブームの翌年に Workers AI を出しました。当時、AI を自分のサービスに組み込むには GPU を確保する必要があり、ハードルが高かったんです。Cloudflare にはすでにコードを動かす場所があったので、そこに GPU を足すだけで、開発者はいつもの Workers のコードから AI を呼べるようになりました。同時に RAG 用のベクトルデータベースと、外部 AI の通信を管理する AI Gateway も出しています。</aside>
+</section>

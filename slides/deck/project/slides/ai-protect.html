@@ -1,0 +1,24 @@
+<section id="ai-protect" style="background:#FAF7F2;color:#1C1F26;font-family:'Noto Sans JP', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:28px;font-weight:700;color:#B4560A;letter-spacing:2px">AI から守る・AI で稼ぐ側の機能</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.25">サイトの持ち主が、AI との付き合い方を決めるための部品</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;flex:1">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF9;border:1px solid #E4DDD1;border-top:8px solid #2B59C3;border-radius:16px;padding:40px">
+<x-icon name="Search" style="width:64px;height:64px;color:#2B59C3"></x-icon>
+<h3 style="font-size:36px;font-weight:700">見る・決める</h3>
+<p style="font-size:28px;color:#4A4F5A;line-height:1.6"><b>AI Crawl Control</b>（旧 AI Audit）。どの AI がどれだけ読みに来たかを見て、AI ごとに許可・ブロックを決める。全プランで使える</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF9;border:1px solid #E4DDD1;border-top:8px solid #F38020;border-radius:16px;padding:40px">
+<x-icon name="Key" style="width:64px;height:64px;color:#B4560A"></x-icon>
+<h3 style="font-size:36px;font-weight:700">払ってもらう</h3>
+<p style="font-size:28px;color:#4A4F5A;line-height:1.6"><b>Pay per crawl</b>（非公開ベータ）と <b>Pay Per Use</b>（2026年9月）。AI が読んだ量・使った量に応じて、サイト側が受け取る</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF9;border:1px solid #E4DDD1;border-top:8px solid #F38020;border-radius:16px;padding:40px">
+<x-icon name="Lightning" style="width:64px;height:64px;color:#B4560A"></x-icon>
+<h3 style="font-size:36px;font-weight:700">エージェントに売る</h3>
+<p style="font-size:28px;color:#4A4F5A;line-height:1.6"><b>Monetization Gateway</b>（ベータ）。HTTP 402 と x402 という仕組みで、API やデータをエージェントに有料で提供する</p>
+</div>
+</div>
+<p style="font-size:28px;color:#4A4F5A">どれも自分のドメインを Cloudflare に登録して使う機能なので、今日のハンズオンでは扱わない</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B7080">出典：developers.cloudflare.com/ai-crawl-control、Birthday Week 2026 まとめ記事（2026年10月5日）</p>
+<aside>もう一つの側面が、AI から守る、あるいは AI からお金を受け取る側の機能です。AI Crawl Control で、どの AI が自分のサイトをどれだけ読んでいるかを見て、許可やブロックを決められます。さらに読んだ量や使った量に応じて支払ってもらう仕組みや、エージェントに API を有料で売る仕組みもあります。HTTP 402 は「支払いが必要」という、昔からあるのにほとんど使われていなかったステータスコードで、エージェント時代になって活用され始めています。</aside>
+</section>

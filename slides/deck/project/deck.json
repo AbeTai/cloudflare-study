@@ -1,0 +1,17 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-09T15:30:00Z"},
+  "lists": "css",
+  "title": "Cloudflare 入門",
+  "order": ["cover", "goal", "what", "scale", "terms", "map", "dash", "hist-overview", "h2010", "h2014", "h2017", "h2018", "h2020", "h2023", "h2025mcp", "h2025crawl", "h2026", "pattern", "ai-build", "ai-protect", "mcp", "free", "handson"],
+  "sections": {
+    "s1": {"description": "Cloudflare とは何か：何をしている会社で、どんなサービスがあるか", "start": "cover"},
+    "s2": {"description": "発展の歴史：各段階で何を作り、なぜそうしたのか", "start": "hist-overview"},
+    "s3": {"description": "AI 文脈で押さえる機能と、ハンズオンへの橋渡し", "start": "ai-build"}
+  },
+  "faces": {
+    "noto-sans-jp": {"family": "Noto Sans JP", "href": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}
